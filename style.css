@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./img/galaxy.gif);
+  
+}
+
+h1{
+    color: white;
+    font-size: 55px;
+    margin:30px 0px;
+}
+header{
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+#mass,select,button{
+    padding: 10px;
+    margin-right: 5px;
+    width: 160px;
+    border: none;
+}
+
+button{
+    background-color: lightgrey;
+    color: white;
+    
+}
+main{
+    display: grid;
+    place-items: center;
+   
+}
+
+img{
+    width: 100%;
+}
+p{
+    line-height: 60px;
+    padding: 15px;
+    background-color:rgba(255, 255, 255, 0.1) ;
+}
+span{
+    font-size: 18px;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, 0.1) ;
+    border-radius: 50%;
+    
+}
+.flex-container{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.1)
+
+}
+.description{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.image{
+    max-width: 400px;
+}
+@media screen and (max-width:750px) {
+    .flex-container{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 40px;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
